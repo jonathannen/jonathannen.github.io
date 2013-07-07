@@ -34,6 +34,14 @@ table {
   font: 100%;
 }
 
+/* Jonathannen */
+div.footnotes p {
+  display: inline;
+}
+div.footnotes li {
+  margin: 1em 0;
+}
+
 /*****************************************************************************/
 /*
 /* Home
