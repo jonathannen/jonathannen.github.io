@@ -16,7 +16,7 @@ One issue that struck me is that while I pay attention to gem licenses - I know 
 
 To satisfy my curiosity I did a quick poll of gems registered with [https://rubygems.org/](https://rubygems.org/). The [gemspec standard](http://docs.rubygems.org/read/chapter/20) provides for specifying one or more licenses, but it's optional and only has limited use[^1].
 
-Of the ~51,000 gems listed on Rubygems only 3,700 have a license defined in the gemspec[^2]. That's just 6%. That's not great for drawing any conclusions. The better news is that this 6% represents 40% of total downloads.
+Of the ~51,000 gems listed on RubyGems only 3,700 have a license defined in the gemspec[^2]. That's just 6%. That's not great for drawing any conclusions. The better news is that this 6% represents 40% of total downloads.
 
 The next issue is the license field is free form. So it's perfectly valid to specify 'BSD'[^3] as opposed to 'BSD-2-Clause'. This leads to some ambiguity.
 
@@ -34,7 +34,7 @@ Then change to a Rails project (or any Gemfile managed project) and execute:
 
 You can run this on your project right now[^4]. 
 
-Unfortunately this works off gemspecs, so there are a lot of gaps. It will take a while for licenses to start showing up in the licenses. To fill the gap I've considered scraping github to determine licenses. A trivial test shows github represents at least 70% of Rubygems.
+Unfortunately this works off gemspecs, so there are a lot of gaps. It will take a while for licenses to start showing up in the licenses. To fill the gap I've considered scraping github to determine licenses. A trivial test shows Github-based projects represent at least 70% of gems listed on RubyGems.
 
 The MIT license should be easy to spot - by the convention of using MIT-LICENCE.txt and the standard layout of the text. A small sample had good results.
 
