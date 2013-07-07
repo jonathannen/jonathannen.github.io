@@ -36,7 +36,7 @@ You can run this on your project right now[^4].
 
 Unfortunately this works off gemspecs, so there are a lot of gaps. It will take a while for licenses to start showing up in the licenses. To fill the gap I've considered scraping github to determine licenses. A trivial test shows Github-based projects represent at least 70% of gems listed on RubyGems.
 
-The MIT license should be easy to spot - by the convention of using MIT-LICENCE.txt and the standard layout of the text. A small sample had good results.
+The MIT license should be easy to spot - by the convention of using MIT-LICENCE.txt and/or the standard layout of the text. A small sample had good results.
 
 Whilst the [Github Terms of Service](https://help.github.com/articles/github-terms-of-service) doesn't get explicit about scraping, it's somewhat impolite. Next step is to ask. Hopefully even a limited sample will plug most of the gap.
 
