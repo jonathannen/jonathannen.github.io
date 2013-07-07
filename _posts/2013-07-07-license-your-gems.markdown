@@ -10,9 +10,9 @@ One habit I do have is checking the licenses of gems I use. What struck me here 
 
 There are [differing interpretations](http://en.wikipedia.org/wiki/GNU_General_Public_License#Libraries) of linking against GPL code (as opposed to LGPL). For my purposes, the GPL wasn't appropriate.
 
-I'm quite often developing proprietary applications. The common default in Rubyland is permissive licenses (MIT/BSD and Ruby) and this isn't and issue. It's so common that I see a lot of developers that use gems with apparent impunity from licensing, but that's another story...
+I'm quite often developing proprietary applications, as are many Rails developers. The common default in Rubyland is permissive licenses (MIT/BSD and Ruby), so there isn't any issue. It's so common that I see a lot of developers that use gems with apparent impunity from licensing, but that's another story...
 
-One issue that struck me is that while I pay attention to gem licenses - I know plenty of people that don't. Similarly, the gem authors themselves don't make any such guarantee. I could installs some_gem_x that installs some_other_license_gem_y.
+One issue that struck me is that while I pay attention to gem licenses - I know plenty of people that don't. Similarly, the gem authors themselves don't make any such guarantee. I could install some_gem_x that installs some_other_license_gem_y.
 
 To satisfy my curiosity I did a quick poll of gems registered with [https://rubygems.org/](https://rubygems.org/). The [gemspec standard](http://docs.rubygems.org/read/chapter/20) provides for specifying one or more licenses, but it's optional and only has limited use[^1].
 
