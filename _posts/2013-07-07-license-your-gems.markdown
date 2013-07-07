@@ -4,7 +4,7 @@ layout: post
 title: "License your gems"
 ---
 
-Recently I was looking at a few libraries for doing terminal colors. Luckily there are [plenty of options](https://www.ruby-toolbox.com/categories/Terminal_Coloring).
+Recently I was looking at a few libraries for managing terminal colors (a seemingly eternal problem). Luckily there are [plenty of options](https://www.ruby-toolbox.com/categories/Terminal_Coloring).
 
 One habit I do have is checking the licenses of gems I use. This case struck me - The #1 and #4 ruby-toolbox-rated gems are actually GPL licensed (See [term-ansicolor](https://github.com/flori/term-ansicolor) and [colorize](https://github.com/fazibear/colorize)).
 
