@@ -8,7 +8,7 @@ Recently I was looking at a few libraries for doing terminal colors. Luckily the
 
 One habit I do have is checking the licenses of gems I use. This case struck me - The #1 and #4 ruby-toolbox-rated gems are actually GPL licensed (See [term-ansicolor](https://github.com/flori/term-ansicolor) and [colorize](https://github.com/fazibear/colorize)).
 
-There are [differing interpretations](http://en.wikipedia.org/wiki/GNU_General_Public_License#Libraries) of linking against GPL code (as opposed to LGPL). For my purposes, the GPL wasn't appropriate.
+There are [differing interpretations](http://en.wikipedia.org/wiki/GNU_General_Public_License#Libraries) of linking against GPL code (as opposed to LGPL) - However, the [GNU interpretation is clear](http://www.gnu.org/licenses/gpl-faq.html#GPLStaticVsDynamic). For my purposes, the GPL wasn't appropriate.
 
 I'm quite often developing proprietary applications, as are many Rails developers. The common default in Rubyland is permissive licenses (MIT/BSD and Ruby), so there generaly isn't any issue making use of gems. It's so common that I see a lot of developers that use gems with apparent impunity from licensing, but that's another story...
 
