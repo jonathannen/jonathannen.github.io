@@ -15,25 +15,21 @@
         <div class="container">
           <div class="site">
             <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
+
+              <a href="/" title="{{ site.name }}">
+                <img src="/images/moi.png" height="120" width="120"/>
+              </a>
+
             </div>
 
                 {{ content }}
 
             <div class="footer">
-              <div class="contact">
-                <p>
-                  Jon Williams<br />
-                  jon@jonathannen.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/jonathannen/">github.com/jonathannen</a><br />
-                  <a href="http://twitter.com/jonathannen/">twitter.com/jonathannen</a><br />
-                </p>
-              </div>
+              <a href="mailto:jon@jonathannen.com">jon@jonathannen.com</a>
+              -
+              <a href="http://github.com/jonathannen/">github.com/jonathannen</a>
+              -
+              <a href="http://twitter.com/jonathannen/">twitter.com/jonathannen</a>
             </div>
           </div>
         </div> <!-- /container -->

@@ -1,12 +1,12 @@
 ---
+date: "Sun 7 Jul 2013 09:13:32 UTC"
 layout: post
-title:  "License your gems"
-date:   Sun 7 Jul 2013 09:13:32 UTC
+title: "License your gems"
 ---
 
 Recently I was looking at a few libraries for doing terminal colors. Luckily there are [plenty of options](https://www.ruby-toolbox.com/categories/Terminal_Coloring).
 
-One habit I do have is checking the licenses of gems I use. What struck me here was the #1 and #4 ruby-toolbox-rated gems are actually GPL licensed (See [term-ansicolor](https://github.com/flori/term-ansicolor) and [colorize](https://github.com/fazibear/colorize)).
+One habit I do have is checking the licenses of gems I use. This case struck me - The #1 and #4 ruby-toolbox-rated gems are actually GPL licensed (See [term-ansicolor](https://github.com/flori/term-ansicolor) and [colorize](https://github.com/fazibear/colorize)).
 
 There are [differing interpretations](http://en.wikipedia.org/wiki/GNU_General_Public_License#Libraries) of linking against GPL code (as opposed to LGPL). For my purposes, the GPL wasn't appropriate.
 

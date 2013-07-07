@@ -1,7 +1,7 @@
 ---
+date: "2011-09-29 17:00:08"
 layout: post
-title:  "How fresh are your gems?"
-date:   2011-09-29 17:00:08
+title: "How fresh are your gems?"
 ---
 
 I often check my Gemfile to see how "current" my gems are with the latest versions. Even with older projects I like to upgrade reasonably often, relying on good testing to keep the application fresh and operating. If I don't do this I find project get stale and harder to keep up-to-date.

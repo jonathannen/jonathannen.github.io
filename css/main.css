@@ -34,14 +34,6 @@ table {
   font: 100%;
 }
 
-/* Jonathannen */
-div.footnotes p {
-  display: inline;
-}
-div.footnotes li {
-  margin: 1em 0;
-}
-
 /*****************************************************************************/
 /*
 /* Home
@@ -171,3 +163,38 @@ ul.posts span {
 .post pre.terminal code {
   background-color: #333;
 }
+
+/* Jonathannen */
+div#disqus_thread {
+  border-top: 1px solid black;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+div.header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+div.footer {
+  padding-top: 10px;
+  text-align: center;
+}
+
+div.footnotes p {
+  display: inline;
+}
+
+div.footnotes li {
+  margin: 1em 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+
