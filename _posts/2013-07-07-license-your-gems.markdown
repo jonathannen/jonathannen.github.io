@@ -34,7 +34,7 @@ Then change to a Rails project (or any Gemfile managed project) and execute:
 
 You can run this on your project right now[^4]. 
 
-Unfortunately this works off gemspecs, so there are a lot of gaps. It will take a while for licenses to start showing up in the licenses. To fill the gap I've considered scraping github to determine licenses. A trivial test shows Github-based projects represent at least 70% of gems listed on RubyGems.
+Unfortunately this works off gemspecs, so there are a lot of gaps. It will take a while for licenses to start showing up universally in the specs. To fill the gap I've considered scraping github to determine licenses. A trivial test shows Github-based projects represent at least 70% of gems listed on RubyGems.
 
 The MIT license should be easy to spot - by the convention of using MIT-LICENCE.txt and/or the standard layout of the text. A small sample had good results.
 
