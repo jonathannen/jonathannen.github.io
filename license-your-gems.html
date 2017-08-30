@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Have you licensed your ruby gems?</title>
+<meta content='We&#39;re used to Ruby gems being permissive licenses, but that&#39;s not always the case. Using gemfresh you can see what licences are in your Gemfile.' name='description'>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
+<meta content='Use gemfresh to see what licenses your Ruby Gemfile is using' property='og:title'>
+<meta content='https://jonathannen.com/license-your-gems.html' property='og:url'>
+<meta content='blog' property='og:type'>
+<meta content='We&#39;re used to Ruby gems being permissive licenses, but that&#39;s not always the case. Using gemfresh you can see what licences are in your Gemfile.' property='og:description'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<meta content='user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'>
+<meta content='01b93cc63e08cbd68da1af5a6a2fbf2c14221ea3' name='version'>
+<link href='/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+<link href='/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+<link href='/manifest.json' rel='manifest'>
+<link color='#5bbad5' href='/safari-pinned-tab.svg' rel='mask-icon'>
+<meta content='#ffffff' name='theme-color'>
+<link href='https://jonathannen.com/rss.xml' rel='alternate' type='application/rss+xml'>
+<link href='https://jonathannen.com/license-your-gems.html' rel='canonical'>
+<link href='//fonts.googleapis.com/css?family=Mada:300,400' media='all' rel='stylesheet'>
+<style type='text/css'>body{background-color:#fefefe;color:#333;font-family:"Mada", "Helvetica", sans-serif;font-weight:300;padding:20px 5px 0 5px}a{border-bottom:1px solid #666666;color:#333;text-decoration:none;font-weight:400}a:hover{border-bottom:1px solid black}em{font-style:normal;font-weight:400}h1{font-size:36px;margin:26px 0;line-height:1.3}h2{font-size:28px;margin:15px 0;line-height:1.3}h3{font-size:24px;margin:10px 0;line-height:1.3}hr{border:none;border-bottom:1px dotted #cccccc;color:#fff;height:0}ol{padding-left:16px}p{font-size:20px;line-height:1.4;margin:1.5em 0}pre{background:#f1f1f1;font-family:Courier New, Courier, monospace;font-size:2.0rem;padding:20px}sup{font-size:14px;vertical-align:super}a.footnote{border:none;font-weight:300;padding-left:3px}div.container{margin:10px auto;max-width:720px;width:720px;padding:0 20px}div.old-article-warning{font-size:14px;margin:24px 0}div.footnotes ol li{font-size:14px}div.footnotes ol li p{font-size:14px}section.footnotes a{border:none}ul.articles{list-style:none;margin:0;padding:0}ul.articles li{padding:10px 0;font-size:24px}section.tags{margin-top:40px;margin-bottom:60px}p.quote{border-left:6px solid #333;padding-left:20px}@media (max-width: 720px){body{padding-top:0px}div.container{margin:0;padding:0;max-width:100%;width:100%}}</style>
+</head>
+
+<body class='license-your-gems'>
+<div class='container'>
+<h1>
+<a href='/'>&lt;</a>
+Have you licensed your ruby gems?
+</h1>
+<div class='old-article-warning'>
+Note: This article is from 2013.
+</div>
+<main>
+<p>Recently I was looking at a few libraries for managing terminal colors (a seemingly eternal problem). Luckily there are <a href="https://www.ruby-toolbox.com/categories/Terminal_Coloring">plenty of options</a>.</p>
+
+<p>One habit I do have is checking the licenses of gems I use. This case struck me - The #1 and #4 ruby-toolbox-rated gems are actually GPL licensed (See <a href="https://github.com/flori/term-ansicolor">term-ansicolor</a> and <a href="https://github.com/fazibear/colorize">colorize</a>).</p>
+
+<p>There are <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License#Libraries">differing interpretations</a> of linking against GPL code (as opposed to LGPL) - However, the <a href="http://www.gnu.org/licenses/gpl-faq.html#GPLStaticVsDynamic">GNU interpretation is clear</a>. For my purposes, the GPL wasn't appropriate.</p>
+
+<p>I'm quite often developing proprietary applications, as are many Rails developers. The common default in Rubyland is permissive licenses (MIT/BSD and Ruby), so there generaly isn't any issue making use of gems. It's so common that I see a lot of developers that use gems with apparent impunity from licensing, but that's another story…</p>
+
+<p>One issue that struck me is that while I pay attention to gem licenses - I know plenty of people that don't. Similarly, the gem authors themselves don't make any such guarantee. I could install some_gem_x that installs some_other_license_gem_y.</p>
+
+<p>To satisfy my curiosity I did a quick poll of gems registered with <a href="https://rubygems.org/">https://rubygems.org/</a>. The <a href="http://docs.rubygems.org/read/chapter/20">gemspec standard</a> provides for specifying one or more licenses, but it's optional and only has limited use<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<p>Of the ~51,000 gems listed on RubyGems only 3,700 have a license defined in the gemspec<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>. That's just 6%. That's not great for drawing any conclusions. The better news is that this 6% represents 40% of total downloads.</p>
+
+<p>The next issue is the license field is free form. So it's perfectly valid to specify 'BSD'<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup> as opposed to 'BSD-2-Clause'. This leads to some ambiguity.</p>
+
+<p>Even so, a simple analysis shows the vast majority are permissive. 3,000 alone are straight "MIT" licenses. BSD variants and Apache licenses follow closely behind.</p>
+
+<p>That said, the GPL and relatives do feature. Plus, there is possibly some <a href="http://en.wikipedia.org/wiki/Selection_bias">selection bias</a> with this type of sample. The use of the license field in the gemspec might be correlated to permissive licenses in any manner of ways.</p>
+
+<p>To speed up the process I put together a tool to example a Gemfile. To get started:</p>
+
+<pre><code>$ gem install gemterms
+</code></pre>
+
+<p>Then change to a Rails project (or any Gemfile managed project) and execute:</p>
+
+<pre><code>$ gemterms
+</code></pre>
+
+<p>You can run this on your project right now<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup>.</p>
+
+<p>Unfortunately this works off gemspecs, so there are a lot of gaps. It will take a while for licenses to start showing up universally in the specs. To fill the gap I've considered scraping github to determine licenses. A trivial test shows Github-based projects represent at least 70% of gems listed on RubyGems.</p>
+
+<p>The MIT license should be easy to spot - by the convention of using MIT-LICENCE.txt and/or the standard layout of the text. A small sample had good results.</p>
+
+<p>Whilst the <a href="https://help.github.com/articles/github-terms-of-service">Github Terms of Service</a> doesn't get explicit about scraping, it's somewhat impolite. Next step is to ask. Hopefully even a limited sample will plug most of the gap.</p>
+
+<p>In the meantime, feel free to give <code>gemterms</code> a try. If you're a gem author or contributor - get your gemspec updated!</p>
+
+
+</main>
+<p class='tags'>
+Filed under <a href='/tags/ruby.html'>Ruby</a>.
+Share this on
+<a href="/meta/license-your-gems.html">Social Media</a>.
+</p>
+<section class='footnotes'>
+<h3 id='footnotes'>Footnotes</h3>
+
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Are you a gem developer? If you don't have the license in your gemspec, please do so!&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>To make life a bit easier, if a later gemspec specified a license it was assumed for the gem. For example, Rails started specifying <em>MIT</em> in the gemspec as of 4.0.0.beta1.&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>Which is ambiguous in itself.&nbsp;<a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>It's very much v0.1 software. <a href="https://github.com/jonathannen/gemterms">Feedback is welcome</a>&nbsp;<a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</section>
+</div>
+
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-22173797-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</body>
+</html>

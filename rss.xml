@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>jonathannen.com</title>
+  <description>Thoughts from Jon Williams. Say Hi at twitter.com/jonathannen</description>
+  <link>https://jonathannen.com</link>
+  <language>en-us</language>
+  <lastBuildDate>Tue, 29 Aug 2017 17:21:26 -0700</lastBuildDate>
+  <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+  <ttl>1800</ttl>
+  <atom:link href="https://jonathannen.com/rss.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>[&quot;Do you feel comfortable&quot;, &quot;being flown by an ai pilot?&quot;]</title>
+    <description>Self-Flying. Will AI and Machine Learning replace your Captain and First Officer?</description>
+    <author>jon@jonthannen.com (Jon Williams)</author>
+    <link>https://jonathannen.com/captain-ai.html</link>
+    <guid isPermaLink="true">https://jonathannen.com/captain-ai.html</guid>
+    <pubDate>Mon, 28 Aug 2017 00:00:00 -0700</pubDate>
+  </item>
+  <item>
+    <title>[&quot;What will&quot;, &quot;self-driving cars do to cities?&quot;]</title>
+    <description>Once we have electric and self-driving cars, what happens to all the land blighted and consumed by roads?</description>
+    <author>jon@jonthannen.com (Jon Williams)</author>
+    <link>https://jonathannen.com/cars-and-real-estate.html</link>
+    <guid isPermaLink="true">https://jonathannen.com/cars-and-real-estate.html</guid>
+    <pubDate>Thu, 24 Aug 2017 00:00:00 -0700</pubDate>
+  </item>
+  <item>
+    <title>[&quot;Have you&quot;, &quot;licensed your ruby gems?&quot;]</title>
+    <description>We're used to Ruby gems being permissive licenses, but that's not always the case. Using gemfresh you can see what licences are in your Gemfile.</description>
+    <author>jon@jonthannen.com (Jon Williams)</author>
+    <link>https://jonathannen.com/license-your-gems.html</link>
+    <guid isPermaLink="true">https://jonathannen.com/license-your-gems.html</guid>
+    <pubDate>Sun, 07 Jul 2013 00:00:00 -0700</pubDate>
+  </item>
+  <item>
+    <title>[&quot;Are your&quot;, &quot;ruby gems fresh?&quot;]</title>
+    <description>Gemfresh is a quick and easy tool to see which Ruby gems in your Gemfile are ready for an update.</description>
+    <author>jon@jonthannen.com (Jon Williams)</author>
+    <link>https://jonathannen.com/how-fresh-are-your-gems.html</link>
+    <guid isPermaLink="true">https://jonathannen.com/how-fresh-are-your-gems.html</guid>
+    <pubDate>Thu, 29 Sep 2011 00:00:00 -0700</pubDate>
+  </item>
+</channel>
+</rss>

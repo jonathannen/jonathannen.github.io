@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>jonathannen.com</title>
-<meta content='Thoughts from Jon Williams. Say Hi at twitter.com/jonathannen.' name='description'>
+<title>Are your ruby gems fresh?</title>
+<meta content='Gemfresh is a quick and easy tool to see which Ruby gems in your Gemfile are ready for an update.' name='description'>
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
-<meta content='jonathannen.com' property='og:title'>
-<meta content='https://jonathannen.com/' property='og:url'>
+<meta content='Use gemfresh to see how up-to-date your Rubygems are' property='og:title'>
+<meta content='https://jonathannen.com/how-fresh-are-your-gems.html' property='og:url'>
 <meta content='blog' property='og:type'>
-<meta content='Thoughts from Jon Williams. Say Hi at twitter.com/jonathannen.' property='og:description'>
+<meta content='Gemfresh is a quick and easy tool to see which Ruby gems in your Gemfile are ready for an update.' property='og:description'>
 <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
 <meta content='user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'>
 <meta content='01b93cc63e08cbd68da1af5a6a2fbf2c14221ea3' name='version'>
@@ -19,27 +19,45 @@
 <link color='#5bbad5' href='/safari-pinned-tab.svg' rel='mask-icon'>
 <meta content='#ffffff' name='theme-color'>
 <link href='https://jonathannen.com/rss.xml' rel='alternate' type='application/rss+xml'>
-<link href='https://jonathannen.com/' rel='canonical'>
+<link href='https://jonathannen.com/how-fresh-are-your-gems.html' rel='canonical'>
 <link href='//fonts.googleapis.com/css?family=Mada:300,400' media='all' rel='stylesheet'>
 <style type='text/css'>body{background-color:#fefefe;color:#333;font-family:"Mada", "Helvetica", sans-serif;font-weight:300;padding:20px 5px 0 5px}a{border-bottom:1px solid #666666;color:#333;text-decoration:none;font-weight:400}a:hover{border-bottom:1px solid black}em{font-style:normal;font-weight:400}h1{font-size:36px;margin:26px 0;line-height:1.3}h2{font-size:28px;margin:15px 0;line-height:1.3}h3{font-size:24px;margin:10px 0;line-height:1.3}hr{border:none;border-bottom:1px dotted #cccccc;color:#fff;height:0}ol{padding-left:16px}p{font-size:20px;line-height:1.4;margin:1.5em 0}pre{background:#f1f1f1;font-family:Courier New, Courier, monospace;font-size:2.0rem;padding:20px}sup{font-size:14px;vertical-align:super}a.footnote{border:none;font-weight:300;padding-left:3px}div.container{margin:10px auto;max-width:720px;width:720px;padding:0 20px}div.old-article-warning{font-size:14px;margin:24px 0}div.footnotes ol li{font-size:14px}div.footnotes ol li p{font-size:14px}section.footnotes a{border:none}ul.articles{list-style:none;margin:0;padding:0}ul.articles li{padding:10px 0;font-size:24px}section.tags{margin-top:40px;margin-bottom:60px}p.quote{border-left:6px solid #333;padding-left:20px}@media (max-width: 720px){body{padding-top:0px}div.container{margin:0;padding:0;max-width:100%;width:100%}}</style>
 </head>
 
-<body class='index'>
+<body class='how-fresh-are-your-gems'>
 <div class='container'>
-<h1>jonathannen<wbr>.com<a href="/about.html">?</a></h1>
-<section>
-<ul class='articles'><li>Do you feel comfortable <a href="/captain-ai.html">being flown by an ai pilot?</a></li><li>What will <a href="/cars-and-real-estate.html">self-driving cars do to cities?</a></li><li>Have you <a href="/license-your-gems.html">licensed your ruby gems?</a></li><li>Are your <a href="/how-fresh-are-your-gems.html">ruby gems fresh?</a></li></ul>
-</section>
-<section class='tags'>
-<p>
-<a href="/about.html">I write</a> on:
-<a href="/tags/innovation.html">Innovation</a> and 
-<a href="/tags/ruby.html">Ruby</a>.
+<h1>
+<a href='/'>&lt;</a>
+Are your ruby gems fresh?
+</h1>
+<div class='old-article-warning'>
+Note: This article is from 2011.
+</div>
+<main>
+<p>I often check my Gemfile to see how "current" my gems are with the latest versions. Even with older projects I like to upgrade reasonably often, relying on good testing to keep the application fresh and operating. If I don't do this I find project get stale and harder to keep up-to-date.</p>
+
+<p>I was doing this manually, so I decided a short script was in order.</p>
+
+<p>This is now wrapped up in a simple gem. To take a look, simply:</p>
+
+<pre><code>$ gem install gemfresh
+</code></pre>
+
+<p>Then change to a Rails project (or any Gemfile managed project) and execute:</p>
+
+<pre><code>$ gemfresh
+</code></pre>
+
+<p>Gemfresh will take a look at your Gemfile and Gemfile.lock - it will then compare this with data sourced from RubyGems sources (generally <a href="https://rubygems.org/">https://rubygems.org/</a>). The report will tell you whats current, what can be upgrade and what is "obsolete".</p>
+
+<p>There are plenty of good reasons to have older versions in your Gemfile, but this is just an easy way to see opportunities to upgrade.</p>
+
+</main>
+<p class='tags'>
+Filed under <a href='/tags/ruby.html'>Ruby</a>.
+Share this on
+<a href="/meta/how-fresh-are-your-gems.html">Social Media</a>.
 </p>
-</section>
-<section>
-<ul class='articles'></ul>
-</section>
 </div>
 
 <script>
